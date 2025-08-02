@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aryan Malik - Front-end Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" xintegrity="sha512-z3gLpd7yXhU/6F+xN+L8+M+C+n7vG7kGzK+q/1gK/f7n9dO+x9+q5X+bO9+7s+2h+r/A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+<body>
+
+    <header class="header">
+        <div class="container header-content">
+            <a href="#" class="logo">
+                <svg viewBox="0 0 50 50" class="logo-icon">
+                    <path d="M25 0c-13.8 0-25 11.2-25 25s11.2 25 25 25 25-11.2 25-25-11.2-25-25-25zm0 46c-11.6 0-21-9.4-21-21s9.4-21 21-21 21 9.4 21 21-9.4 21-21 21zM15 15c-1.1 0-2 0.9-2 2v16c0 1.1 0.9 2 2 2h20c1.1 0 2-0.9 2-2v-16c0-1.1-0.9-2-2-2h-20zm0 2h20v16h-20v-16zM20 20c-1.1 0-2 0.9-2 2s0.9 2 2 2 2-0.9 2-2-0.9-2-2-2zM30 20c-1.1 0-2 0.9-2 2s0.9 2 2 2 2-0.9 2-2-0.9-2-2-2zM20 25c-1.1 0-2 0.9-2 2s0.9 2 2 2 2-0.9 2-2-0.9-2-2-2zM30 25c-1.1 0-2 0.9-2 2s0.9 2 2 2 2-0.9 2-2-0.9-2-2-2z"/>
+                </svg>
+                JTG
+            </a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#recommendations">Recommendations</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-bg"></div> <div class="container hero-container">
+                <div class="hero-content" data-aos="fade-right">
+                    <h1>I'm Aryan Malik</h1>
+                    <span class="highlight">Front-end Developer</span>
+                    <p>Passionate about web development and building innovative solutions that solve real-world problems.</p>
+                    <a href="#contact" class="btn">Hire Me <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </section>
+        
+        <section id="skills" class="skills-section">
+            <div class="container" data-aos="fade-up">
+                <h2>My Skills</h2>
+                <div class="skills-category">
+                    <h3>Frontend Technologies</h3>
+                    <div class="skills-grid">
+                        <div class="skill-card" data-aos="zoom-in">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5">
+                            <span>HTML5</span>
+                        </div>
+                        <div class="skill-card" data-aos="zoom-in" data-aos-delay="100">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3">
+                            <span>CSS3</span>
+                        </div>
+                        <div class="skill-card" data-aos="zoom-in" data-aos-delay="200">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="skill-card" data-aos="zoom-in" data-aos-delay="300">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React">
+                            <span>React</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills-category">
+                    <h3>Backend & Other Skills</h3>
+                    <div class="skills-grid">
+                        <div class="skill-card" data-aos="zoom-in">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
+                            <span>Python</span>
+                        </div>
+                        <div class="skill-card" data-aos="zoom-in" data-aos-delay="100">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java">
+                            <span>Java</span>
+                        </div>
+                        <div class="skill-card" data-aos="zoom-in" data-aos-delay="200">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" alt="Firebase">
+                            <span>Firebase</span>
+                        </div>
+                        <div class="skill-card" data-aos="zoom-in" data-aos-delay="300">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git">
+                            <span>Git</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="education" class="education">
+            <div class="container" data-aos="fade-up">
+                <h2>Education</h2>
+                <div class="education-timeline">
+                    <div class="timeline-item" data-aos="fade-left">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>Bachelor of Technology - Computer Science</h3>
+                            <h4>SRM University, Sonipat</h4>
+                            <p class="timeline-date">2022-2026</p>
+                            <p class="score">CGPA: 6.5</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item" data-aos="fade-right">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>Intermediate (CBSE)</h3>
+                            <h4>Bright Scholar School, Sonipat</h4>
+                            <p class="timeline-date">2020-2021</p>
+                            <p class="score">Score: 72.5%</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item" data-aos="fade-left">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>Matriculation (CBSE)</h3>
+                            <h4>Bright Scholar School, Sonipat</h4>
+                            <p class="timeline-date">2018-2019</p>
+                            <p class="score">Score: 70%</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="projects" class="projects">
+            <div class="container">
+                <h2 data-aos="fade-down">Featured Projects</h2>
+                <div class="project-filters" data-aos="fade-down">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="web-apps">Web Apps</button>
+                    <button class="filter-btn" data-filter="desktop">Desktop</button>
+                    <button class="filter-btn" data-filter="ui-ux">UI/UX</button>
+                </div>
+                <div class="project-grid">
+                    <div class="project-card project-card-hover" data-aos="fade-left" data-category="web-apps">
+                        <img src="https://flex-web-media-prod.storage.googleapis.com/2024/09/7-minute-workout-1.jpg" alt="7 Minute Workout App">
+                        <div class="project-content">
+                            <h3>7 Minute Workout App</h3>
+                            <p>A web-based fitness application designed to guide users through a quick and effective 7-minute workout routine.</p>
+                            <div class="project-tags">
+                                <span class="tag">HTML</span>
+                                <span class="tag">CSS</span>
+                                <span class="tag">JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card project-card-hover" data-aos="fade-right" data-category="desktop">
+                        <img src="https://milkmate-tan.vercel.app/_next/image?url=%2Fimage.png&w=1200&q=75" alt="Milkmate">
+                        <div class="project-content">
+                            <h3>Milkmate</h3>
+                            <p>A desktop application for managing milk delivery services, including customer details, orders, and billing.</p>
+                            <div class="project-tags">
+                                <span class="tag">Java</span>
+                                <span class="tag">Swing</span>
+                                <span class="tag">Desktop</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card project-card-hover" data-aos="fade-left" data-category="ui-ux">
+                        <img src="https://cdn2.hubspot.net/hubfs/437355/Mario_2.png" alt="Mario Game">
+                        <div class="project-content">
+                            <h3>Mario Game</h3>
+                            <p>An interactive Mario-style game clone, focusing on game mechanics and a fun user experience.</p>
+                            <div class="project-tags">
+                                <span class="tag">Figma</span>
+                                <span class="tag">UI/UX</span>
+                                <span class="tag">Prototyping</span>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="project-card project-card-hover" data-aos="fade-right" data-category="web-apps">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/e/ef/Face_detection.jpg" alt="Face Detection System">
+                        <div class="project-content">
+                            <h3>Face Detection System</h3>
+                            <p>A web-based system using JavaScript libraries to detect and track faces in real-time video feeds.</p>
+                            <div class="project-tags">
+                                <span class="tag">HTML</span>
+                                <span class="tag">CSS</span>
+                                <span class="tag">JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="recommendations" class="recommendations">
+            <div class="container" data-aos="fade-up">
+                <h2>Recommendations</h2>
+                <div class="carousel-wrapper">
+                    <div class="carousel-container">
+                        <div class="testimonial-card">
+                            <div class="star-rating">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                            <p>“Really happy with the results! They’re an amazing front-end developer.”</p>
+                            <div class="testimonial-author">
+                                <div class="author-image">
+                                    <img src="https://placehold.co/60x60/f7f7f7/666?text=A" alt="Anna O'Connell" onerror="this.onerror=null;this.src='https://placehold.co/60x60/f7f7f7/666?text=A';" />
+                                </div>
+                                <div class="author-info">
+                                    <h4>Anna O'Connell</h4>
+                                    <span>Creative Director</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-card">
+                            <div class="star-rating">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                            <p>“Amazing to work with. Highly skilled and great communication throughout the project.”</p>
+                            <div class="testimonial-author">
+                                <div class="author-image">
+                                    <img src="https://placehold.co/60x60/f7f7f7/666?text=J" alt="James Gosling" onerror="this.onerror=null;this.src='https://placehold.co/60x60/f7f7f7/666?text=J';" />
+                                </div>
+                                <div class="author-info">
+                                    <h4>James Gosling</h4>
+                                    <span>CTO</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-card">
+                            <div class="star-rating">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                            <p>“What a pro! They delivered a pixel-perfect design on time and with great attention to detail.”</p>
+                            <div class="testimonial-author">
+                                <div class="author-image">
+                                    <img src="https://placehold.co/60x60/f7f7f7/666?text=L" alt="Lisa Simpson" onerror="this.onerror=null;this.src='https://placehold.co/60x60/f7f7f7/666?text=L';" />
+                                </div>
+                                <div class="author-info">
+                                    <h4>Lisa Simpson</td>
+                                    <span>Product Manager</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-card">
+                            <div class="star-rating">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                            <p>“A great partner for any project. Professional, fast, and high-quality work.”</p>
+                            <div class="testimonial-author">
+                                <div class="author-image">
+                                    <img src="https://placehold.co/60x60/f7f7f7/666?text=J" alt="John Doe" onerror="this.onerror=null;this.src='https://placehold.co/60x60/f7f7f7/666?text=J';" />
+                                </div>
+                                <div class="author-info">
+                                    <h4>John Doe</td>
+                                    <span>Lead Engineer</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-nav">
+                        <button id="prevBtn">&lt;</button>
+                        <button id="nextBtn">&gt;</button>
+                    </div>
+                </div>
+                <div class="carousel-dots">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <div class="contact-form" data-aos="fade-right">
+                    <h2>Leave Me Your Info</h2>
+                    <form action="#" method="POST" id="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Full Name (Required)" required>
+                            <input type="email" id="email" name="email" placeholder="Your Email Address (Required)" required>
+                        </div>
+                        <input type="text" id="subject" name="subject" placeholder="Subject">
+                        <textarea id="message" name="message" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                </div>
+                <div class="contact-info" data-aos="fade-left">
+                    <h2>Contact Information</h2>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div class="info-text">
+                            <span>Country</span>
+                            <span>India</span>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <div class="info-text">
+                            <span>Phone</span>
+                            <span>+91 9350380441</span>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div class="info-text">
+                            <span>Email</span>
+                            <span>aryan.malik.6262@gmail.com</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-col footer-logo">
+                <a href="#" class="logo">
+                    <svg viewBox="0 0 50 50" class="logo-icon">
+                        <path d="M25 0c-13.8 0-25 11.2-25 25s11.2 25 25 25 25-11.2 25-25-11.2-25-25-25zm0 46c-11.6 0-21-9.4-21-21s9.4-21 21-21 21 9.4 21 21-9.4 21-21 21zM15 15c-1.1 0-2 0.9-2 2v16c0 1.1 0.9 2 2 2h20c1.1 0 2-0.9 2-2v-16c0-1.1-0.9-2-2-2h-20zm0 2h20v16h-20v-16zM20 20c-1.1 0-2 0.9-2 2s0.9 2 2 2 2-0.9 2-2-0.9-2-2-2zM30 20c-1.1 0-2 0.9-2 2s0.9 2 2 2 2-0.9 2-2-0.9-2-2-2zM20 25c-1.1 0-2 0.9-2 2s0.9 2 2 2 2-0.9 2-2-0.9-2-2-2zM30 25c-1.1 0-2 0.9-2 2s0.9 2 2 2 2-0.9 2-2-0.9-2-2-2z"/>
+                </svg>
+                JTG
+            </a>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+        <div class="footer-col">
+            <h3>Useful Links</h3>
+            <ul>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+                <li><a href="#">Projects</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h3>Portfolio</h3>
+            <ul>
+                <li><a href="#">Web Design</a></li>
+                <li><a href="#">Mobile Apps</a></li>
+                <li><a href="#">UI/UX Design</a></li>
+                <li><a href="#">Marketing</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h3>Company</h3>
+            <ul>
+                <li><a href="#">Career</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Support</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 JTG. All Rights Reserved.</p>
+    </div>
+</footer>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
