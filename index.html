@@ -1,368 +1,465 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aryan Malik - Front-end Developer</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" xintegrity="sha512-z3gLpd7yXhU/6F+xN+L8+M+C+n7vG7kGzK+q/1gK/f7n9dO+x9+q5X+bO9+7s+2h+r/A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-</head>
-<body>
 
-    <header class="header">
-        <div class="container header-content">
-            <a href="#" class="logo">
-                <svg viewBox="0 0 50 50" class="logo-icon">
-                    <path d="M25 0c-13.8 0-25 11.2-25 25s11.2 25 25 25 25-11.2 25-25-11.2-25-25-25zm0 46c-11.6 0-21-9.4-21-21s9.4-21 21-21 21 9.4 21 21-9.4 21-21 21zM15 15c-1.1 0-2 0.9-2 2v16c0 1.1 0.9 2 2 2h20c1.1 0 2-0.9 2-2v-16c0-1.1-0.9-2-2-2h-20zm0 2h20v16h-20v-16zM20 20c-1.1 0-2 0.9-2 2s0.9 2 2 2 2-0.9 2-2-0.9-2-2-2zM30 20c-1.1 0-2 0.9-2 2s0.9 2 2 2 2-0.9 2-2-0.9-2-2-2zM20 25c-1.1 0-2 0.9-2 2s0.9 2 2 2 2-0.9 2-2-0.9-2-2-2zM30 25c-1.1 0-2 0.9-2 2s0.9 2 2 2 2-0.9 2-2-0.9-2-2-2z"/>
-                </svg>
-                JTG
-            </a>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aryan Malik | Full-Stack Developer</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">AM</div>
             <nav>
-                <ul class="nav-links">
-                    <li><a href="#home" class="active">Home</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#education">Education</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#recommendations">Recommendations</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                <ul>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#education" class="nav-link">Education</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
                 </ul>
             </nav>
+            <div class="theme-switch">
+                <i class="fas fa-moon"></i>
+            </div>
         </div>
     </header>
 
-    <main>
-        <section id="home" class="hero">
-            <div class="hero-bg"></div> <div class="container hero-container">
-                <div class="hero-content" data-aos="fade-right">
-                    <h1>I'm Aryan Malik</h1>
-                    <span class="highlight">Front-end Developer</span>
-                    <p>Passionate about web development and building innovative solutions that solve real-world problems.</p>
-                    <a href="#contact" class="btn">Hire Me <i class="fas fa-arrow-right"></i></a>
+    <section class="hero" id="about">
+        <div class="hero-overlay"></div>
+        <div class="particles-container" id="particles-js"></div>
+        <div class="hero-wrapper">
+            <div class="hero-content">
+                <div class="hero-image">
+                    <div class="hero-image-frame fade-in">
+                        <img src="images/PROFILEP.jpg" alt="Anish Kumar - Full-Stack Developer" />
+                    </div>
+                    <div class="hero-image-shape fade-in"></div>
+                </div>
+                <div class="hero-text">
+                    <div class="hero-subtitle fade-in">Hello, I'm</div>
+                    <h1 class="hero-title fade-in">Aryan Malik</h1>
+                    <h2 class="hero-role fade-in">
+                        <span class="txt-rotate" data-period="2000" data-rotate='[ "Full-Stack Developer", "Web Developer", "UI Designer", "Computer Science Student" ]'></span>
+                    </h2>
+                    <p class="fade-in">
+                        Innovative Computer Science student with experience in building responsive web applications using modern technologies. Passionate about creating clean, efficient, and user-friendly digital experiences.
+                    </p>
+                    <div class="hero-cta fade-in">
+                        <a href="aryan_resume.pdf" download="anish_resume.pdf" class="btn-primary">
+                            <i class="fas fa-download"></i> Download Resume
+                        </a>
+                        <a href="#contact" class="btn-secondary">
+                            <i class="fas fa-envelope"></i> Let's Connect
+                        </a>
+                    </div>
+                    <div class="hero-social fade-in">
+                        <a href="https://www.linkedin.com/in/aryan-malik-9b4763251/" target="_blank" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://leetcode.com//" target="_blank" class="social-icon">
+                            <img src="images/leet.webp" alt="LeetCode" class="leetcode-icon" />
+                        </a>
+                        <a href="https://github.com/Aryanmalik193" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
+                    </div>
                 </div>
             </div>
-        </section>
-        
-        <section id="skills" class="skills-section">
-            <div class="container" data-aos="fade-up">
-                <h2>My Skills</h2>
-                <div class="skills-category">
-                    <h3>Frontend Technologies</h3>
-                    <div class="skills-grid">
-                        <div class="skill-card" data-aos="zoom-in">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5">
-                            <span>HTML5</span>
+        </div>
+        <div class="hero-scroll fade-in">
+            <a href="#skills">
+                <div class="mouse-icon">
+                    <div class="mouse-wheel"></div>
+                </div>
+                <span>Scroll Down</span>
+            </a>
+        </div>
+    </section>
+
+    <section class="skills-section" id="skills">
+        <div class="svg-divider top-divider">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+            </svg>
+        </div>
+        <div class="container">
+            <h2 class="section-title fade-in"><span>Technical Skills</span></h2>
+
+            <div class="skills-category fade-in">
+                <h3>Frontend Development</h3>
+                <div class="skills-grid">
+                    <div class="skill-card fade-in">
+                        <img src="images/react.png" alt="React.js" />
+                        <span>React.js</span>
+                    </div>
+                    <div class="skill-card fade-in">
+                        <img src="images/nextjslogo.png" alt="Next.js" />
+                        <span>Next.js</span>
+                    </div>
+                    <div class="skill-card fade-in">
+                        <img src="images/taillogo.png" alt="Tailwind CSS" />
+                        <span>Tailwind CSS</span>
+                    </div>
+                    <div class="skill-card fade-in">
+                        <img src="images/htmllogo.png" alt="HTML5" />
+                        <span>HTML5</span>
+                    </div>
+                    <div class="skill-card fade-in">
+                        <img src="images/csslogo.png" alt="CSS3" />
+                        <span>CSS3</span>
+                    </div>
+                    <div class="skill-card fade-in">
+                        <img src="images/jslogo.png" alt="JavaScript" />
+                        <span>JavaScript</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skills-category fade-in">
+                <h3>Backend & Database</h3>
+                <div class="skills-grid">
+                    <div class="skill-card fade-in">
+                        <img src="images/firebase.png" alt="Firebase" />
+                        <span>Firebase</span>
+                    </div>
+                    <div class="skill-card fade-in">
+                        <img src="images/mysqllogo.png" alt="MySQL" />
+                        <span>MySQL</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skills-category fade-in">
+                <h3>Programming Languages</h3>
+                <div class="skills-grid">
+                    <div class="skill-card fade-in">
+                        <img src="images/javalogo.png" alt="Java" />
+                        <span>Java</span>
+                    </div>
+                    <div class="skill-card fade-in">
+                        <img src="images/pythonlogo.webp" alt="Python" />
+                        <span>Python</span>
+                    </div>
+                    <div class="skill-card fade-in">
+                        <img src="images/clogo.png" alt="C" />
+                        <span>C</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skills-category fade-in">
+                <h3>Cloud & DevOps</h3>
+                <div class="skills-grid">
+                    <div class="skill-card fade-in">
+                        <img src="images/awslogo.png" alt="AWS" />
+                        <span>AWS</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="svg-divider bottom-divider">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+            </svg>
+        </div>
+    </section>
+
+    <section class="projects-section" id="projects">
+        <div class="container">
+            <h2 class="section-title fade-in"><span>Featured Projects</span></h2>
+
+            <div class="projects-filter fade-in">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web Apps</button>
+                <button class="filter-btn" data-filter="desktop">Desktop</button>
+                <button class="filter-btn" data-filter="ui">UI/UX</button>
+            </div>
+
+            <div class="projects-grid">
+                <div class="project-card fade-in" id="workout app" data-category="web">
+                    <div class="project-slider">
+                        <div class="project-slider-inner">
+                            <img src="https://flex-web-media-prod.storage.googleapis.com/2024/09/7-minute-workout-1.jpg" alt="LOGIN" />
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSDJmBkOcqs90IpBpq2RLThTDnDLECvJhQ_Q&s" alt="DASHBOARD" />
+                            <img src="https://shaadiwish.com/blog/wp-content/uploads/2018/11/7-minute-workout.png" alt="CREATE STUDENT CLASS" />
                         </div>
-                        <div class="skill-card" data-aos="zoom-in" data-aos-delay="100">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3">
-                            <span>CSS3</span>
+                        <div class="slider-controls">
+                            <button class="slider-prev">
+                                <i class="fas fa-chevron-left"></i>
+                            </button>
+                            <button class="slider-next">
+                                <i class="fas fa-chevron-right"></i>
+                            </button>
                         </div>
-                        <div class="skill-card" data-aos="zoom-in" data-aos-delay="200">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
-                            <span>JavaScript</span>
+                        <div class="slider-dots"></div>
+                    </div>
+                    <div class="project-content">
+                        <h3>7 Minute Workout App</h3>
+                        <div class="project-tags">
+                            <span>HTML</span>
+                            <span>PHP</span>
+                            <span>CSS</span>
+                            <span>JAVASCRIPT</span>
                         </div>
-                        <div class="skill-card" data-aos="zoom-in" data-aos-delay="300">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React">
-                            <span>React</span>
+                        <p>
+                            Get fit fast with science-backed, high-intensity workouts designed to boost your metabolism and burn calories in just 7 minutes a day. Perfect for busy schedules, no equipment needed — just your body and a little motivation!
+                        </p>
+                        <div class="project-links">
+                            <a href="https://github.com/Aryanmalik193/7-minute-workout-app" target="_blank" class="btn-link">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                            <button class="btn-link" data-project="srms-project">
+                                <i class="fas fa-images"></i> View Gallery
+                            </button>
                         </div>
                     </div>
                 </div>
-                <div class="skills-category">
-                    <h3>Backend & Other Skills</h3>
-                    <div class="skills-grid">
-                        <div class="skill-card" data-aos="zoom-in">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
-                            <span>Python</span>
+
+                <div class="project-card fade-in" id="Drivo app" data-category="desktop">
+                    <div class="project-slider">
+                        <div class="project-slider-inner">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjIesyf7hHKxp4jqJPoDwP9nfpYdTTBzPfJQ&s" alt="home page" />
+                            <img src="https://cdn.dribbble.com/userupload/3014663/file/original-c23c1c1053412e618b5a508812baa4aa.jpg?resize=400x0" alt="interface " />
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSH9EXso9X74TEcxbtmCuhGGJ-q_YG_x6lb_A&s" alt="live info" />
                         </div>
-                        <div class="skill-card" data-aos="zoom-in" data-aos-delay="100">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java">
+                        <div class="slider-controls">
+                            <button class="slider-prev">
+                                <i class="fas fa-chevron-left"></i>
+                            </button>
+                            <button class="slider-next">
+                                <i class="fas fa-chevron-right"></i>
+                            </button>
+                        </div>
+                        <div class="slider-dots"></div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Drivo App</h3>
+                        <div class="project-tags">
                             <span>Java</span>
+                            <span>Swing</span>
+                            <span>Desktop</span>
                         </div>
-                        <div class="skill-card" data-aos="zoom-in" data-aos-delay="200">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" alt="Firebase">
-                            <span>Firebase</span>
+                        <p>
+                           Drivo helps you track your driving habits, monitor trip details, and improve road safety with smart insights. Perfect for drivers who want to save fuel, reduce wear, and drive smarter every day.
+                        </p>
+                        <div class="project-links">
+                            <a href="https://github.com/Aryanmalik193?tab=repositories" target="_blank" class="btn-link">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                            <button class="btn-link" data-project="breakout-game">
+                                <i class="fas fa-images"></i> View Gallery
+                            </button>
                         </div>
-                        <div class="skill-card" data-aos="zoom-in" data-aos-delay="300">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git">
-                            <span>Git</span>
+                    </div>
+                </div>
+
+                <div class="project-card fade-in" id="spitify-ui-clone" data-category="desktop">
+                    <div class="project-slider">
+                        <div class="project-slider-inner">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbTLvHvHHaeRqKdNFohQQwTmEqESxgfrCQWA&s" alt="Interface" />
+                            <img src="https://www.figma.com/community/resource/62fab171-9f41-44fe-8758-176c6a3de1ac/thumbnail" alt="Tags Feature" />
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5F5UFNqwQRSvwBe4dyt0ABDzD8gjSKS4GVw&s" alt="Features" />
+                        </div>
+                        <div class="slider-controls">
+                            <button class="slider-prev"><i class="fas fa-chevron-left"></i></button>
+                            <button class="slider-next"><i class="fas fa-chevron-right"></i></button>
+                        </div>
+                        <div class="slider-dots"></div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Spotify Clone app</h3>
+                        <div class="project-tags">
+                            <span>Java</span>
+                            <span>Swing</span>
+                            <span>Desktop App</span>
+                        </div>
+                        <p>
+                           A sleek music streaming app that lets users play, pause, browse, and discover tracks just like Spotify. Enjoy a modern UI, playlist support, and seamless audio playback — your music, your vibe.
+                        </p>
+                        <div class="project-links">
+                            <a href="https://advanced-notes.app/" target="_blank" class="btn-link">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                            <a href="https://github.com/Aryanmalik193/spotifyuiclone" target="_blank" class="btn-link">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                            <button class="btn-link" data-project="note-app">
+                                <i class="fas fa-images"></i> View Gallery
+                            </button>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section id="education" class="education">
-            <div class="container" data-aos="fade-up">
-                <h2>Education</h2>
-                <div class="education-timeline">
-                    <div class="timeline-item" data-aos="fade-left">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-content">
-                            <h3>Bachelor of Technology - Computer Science</h3>
-                            <h4>SRM University, Sonipat</h4>
-                            <p class="timeline-date">2022-2026</p>
-                            <p class="score">CGPA: 6.5</p>
-                        </div>
+    <div id="projectGalleryModal" class="project-gallery-modal">
+        <div class="gallery-modal-content">
+            <span class="gallery-close">&times;</span>
+            <h3 class="gallery-title">Project Gallery</h3>
+            <div class="gallery-container">
+                </div>
+            <div class="gallery-navigation">
+                <button class="gallery-prev">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <div class="gallery-dots"></div>
+                <button class="gallery-next">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <section class="timeline-section" id="education">
+        <div class="svg-divider top-divider">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+            </svg>
+        </div>
+        <div class="container">
+            <h2 class="section-title fade-in"><span>Education & Experience</span></h2>
+            <div class="timeline">
+                <div class="timeline-item fade-in">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>B.Tech in Computer Science Engineering</h3>
+                        <h4>SRM University, Delhi NCR - Sonipat, Haryana</h4>
+                        <p class="timeline-date">2022-2026 (pursuing)</p>
+                        <p>
+                            Relevant coursework: Data Structures, Algorithms, Web Development, Cloud Computing
+                        </p>
                     </div>
-                    <div class="timeline-item" data-aos="fade-right">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-content">
-                            <h3>Intermediate (CBSE)</h3>
-                            <h4>Bright Scholar School, Sonipat</h4>
-                            <p class="timeline-date">2020-2021</p>
-                            <p class="score">Score: 72.5%</p>
-                        </div>
+                </div>
+
+                <div class="timeline-item fade-in">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Frontend Developer Intern</h3>
+                        <h4>CodeAlpha</h4>
+                        <p class="timeline-date">August 2024 - September 2024</p>
+                        <p>
+                            Developed responsive web applications and collaborated with remote team using agile methodologies.
+                        </p>
                     </div>
-                    <div class="timeline-item" data-aos="fade-left">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-content">
-                            <h3>Matriculation (CBSE)</h3>
-                            <h4>Bright Scholar School, Sonipat</h4>
-                            <p class="timeline-date">2018-2019</p>
-                            <p class="score">Score: 70%</p>
-                        </div>
+                </div>
+
+                <div class="timeline-item fade-in">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>SRM BUILDS 5.0 X FINTECH</h3>
+                        <h4>CIIE, SRM University</h4>
+                        <p class="timeline-date">July 2024</p>
+                        <p>
+                            Led a team to develop a financial technology solution within 24 hours using Next.js and Firebase.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-item fade-in">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Web Development Training</h3>
+                        <p>"Completed a comprehensive web development training program at Infosys, gaining hands-on expertise in building full-stack applications. The curriculum provided a strong foundation in core technologies such as HTML, CSS, JavaScript, and Java, with a focus on real-world, project-based application development."</p>
+                        <p class="timeline-date">July 2024 - August 2024</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item fade-in">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>CBSE Senior Secondary</h3>
+                        <h4> Bright Scholar School, sonipat </h4>
+                        <p class="timeline-date">2020-2021</p>
+                        <p>Scored 72.5%</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item fade-in">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>CBSE Secondary</h3>
+                        <h4> Bright Scholar School, sonipat </h4>
+                        <p class="timeline-date">2018-2019</p>
+                        <p>Scored 70%</p>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+        <div class="svg-divider bottom-divider">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+            </svg>
+        </div>
+    </section>
 
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <h2 class="section-title fade-in"><span>Get In Touch</span></h2>
 
-        <section id="projects" class="projects">
-            <div class="container">
-                <h2 data-aos="fade-down">Featured Projects</h2>
-                <div class="project-filters" data-aos="fade-down">
-                    <button class="filter-btn active" data-filter="all">All</button>
-                    <button class="filter-btn" data-filter="web-apps">Web Apps</button>
-                    <button class="filter-btn" data-filter="desktop">Desktop</button>
-                    <button class="filter-btn" data-filter="ui-ux">UI/UX</button>
-                </div>
-                <div class="project-grid">
-                    <div class="project-card project-card-hover" data-aos="fade-left" data-category="web-apps">
-                        <img src="https://flex-web-media-prod.storage.googleapis.com/2024/09/7-minute-workout-1.jpg" alt="7 Minute Workout App">
-                        <div class="project-content">
-                            <h3>7 Minute Workout App</h3>
-                            <p>A web-based fitness application designed to guide users through a quick and effective 7-minute workout routine.</p>
-                            <div class="project-tags">
-                                <span class="tag">HTML</span>
-                                <span class="tag">CSS</span>
-                                <span class="tag">JavaScript</span>
-                            </div>
+            <div class="contact-container">
+                <div class="contact-info fade-in">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <p><a href="mailto:aryan.malik.6262@gmail.com">aryan.malik.6262@gmail.com</a></p>
                         </div>
                     </div>
-                    <div class="project-card project-card-hover" data-aos="fade-right" data-category="desktop">
-                        <img src="https://milkmate-tan.vercel.app/_next/image?url=%2Fimage.png&w=1200&q=75" alt="Milkmate">
-                        <div class="project-content">
-                            <h3>Milkmate</h3>
-                            <p>A desktop application for managing milk delivery services, including customer details, orders, and billing.</p>
-                            <div class="project-tags">
-                                <span class="tag">Java</span>
-                                <span class="tag">Swing</span>
-                                <span class="tag">Desktop</span>
-                            </div>
+
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Location</h3>
+                            <p>Sonipat, Haryana, India</p>
                         </div>
                     </div>
-                    <div class="project-card project-card-hover" data-aos="fade-left" data-category="ui-ux">
-                        <img src="https://cdn2.hubspot.net/hubfs/437355/Mario_2.png" alt="Mario Game">
-                        <div class="project-content">
-                            <h3>Mario Game</h3>
-                            <p>An interactive Mario-style game clone, focusing on game mechanics and a fun user experience.</p>
-                            <div class="project-tags">
-                                <span class="tag">Figma</span>
-                                <span class="tag">UI/UX</span>
-                                <span class="tag">Prototyping</span>
-                            </div>
-                        </div>
-                    </div>
-                     <div class="project-card project-card-hover" data-aos="fade-right" data-category="web-apps">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/e/ef/Face_detection.jpg" alt="Face Detection System">
-                        <div class="project-content">
-                            <h3>Face Detection System</h3>
-                            <p>A web-based system using JavaScript libraries to detect and track faces in real-time video feeds.</p>
-                            <div class="project-tags">
-                                <span class="tag">HTML</span>
-                                <span class="tag">CSS</span>
-                                <span class="tag">JavaScript</span>
-                            </div>
-                        </div>
+
+                    <div class="social-links fade-in">
+                        <a href="https://www.linkedin.com/in/aryan-malik-9b4763251/" target="_blank" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://leetcode.com//" target="_blank" class="social-icon">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/LeetCode_logo_black.png" alt="LeetCode" class="leetcode-icon" />
+                        </a>
+                        <a href="https://github.com/aryanmalik31" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
                     </div>
                 </div>
-            </div>
-        </section>
 
-        <section id="recommendations" class="recommendations">
-            <div class="container" data-aos="fade-up">
-                <h2>Recommendations</h2>
-                <div class="carousel-wrapper">
-                    <div class="carousel-container">
-                        <div class="testimonial-card">
-                            <div class="star-rating">
-                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                            </div>
-                            <p>“Really happy with the results! They’re an amazing front-end developer.”</p>
-                            <div class="testimonial-author">
-                                <div class="author-image">
-                                    <img src="https://placehold.co/60x60/f7f7f7/666?text=A" alt="Anna O'Connell" onerror="this.onerror=null;this.src='https://placehold.co/60x60/f7f7f7/666?text=A';" />
-                                </div>
-                                <div class="author-info">
-                                    <h4>Anna O'Connell</h4>
-                                    <span>Creative Director</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="testimonial-card">
-                            <div class="star-rating">
-                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                            </div>
-                            <p>“Amazing to work with. Highly skilled and great communication throughout the project.”</p>
-                            <div class="testimonial-author">
-                                <div class="author-image">
-                                    <img src="https://placehold.co/60x60/f7f7f7/666?text=J" alt="James Gosling" onerror="this.onerror=null;this.src='https://placehold.co/60x60/f7f7f7/666?text=J';" />
-                                </div>
-                                <div class="author-info">
-                                    <h4>James Gosling</h4>
-                                    <span>CTO</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="testimonial-card">
-                            <div class="star-rating">
-                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                            </div>
-                            <p>“What a pro! They delivered a pixel-perfect design on time and with great attention to detail.”</p>
-                            <div class="testimonial-author">
-                                <div class="author-image">
-                                    <img src="https://placehold.co/60x60/f7f7f7/666?text=L" alt="Lisa Simpson" onerror="this.onerror=null;this.src='https://placehold.co/60x60/f7f7f7/666?text=L';" />
-                                </div>
-                                <div class="author-info">
-                                    <h4>Lisa Simpson</td>
-                                    <span>Product Manager</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="testimonial-card">
-                            <div class="star-rating">
-                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                            </div>
-                            <p>“A great partner for any project. Professional, fast, and high-quality work.”</p>
-                            <div class="testimonial-author">
-                                <div class="author-image">
-                                    <img src="https://placehold.co/60x60/f7f7f7/666?text=J" alt="John Doe" onerror="this.onerror=null;this.src='https://placehold.co/60x60/f7f7f7/666?text=J';" />
-                                </div>
-                                <div class="author-info">
-                                    <h4>John Doe</td>
-                                    <span>Lead Engineer</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-nav">
-                        <button id="prevBtn">&lt;</button>
-                        <button id="nextBtn">&gt;</button>
-                    </div>
-                </div>
-                <div class="carousel-dots">
-                    <span class="dot active"></span>
-                    <span class="dot"></span>
-                </div>
-            </div>
-        </section>
-
-        <section id="contact" class="contact">
-            <div class="container">
-                <div class="contact-form" data-aos="fade-right">
-                    <h2>Leave Me Your Info</h2>
-                    <form action="#" method="POST" id="contact-form">
+                <div class="contact-form fade-in" id="contactForm">
+                    <form action="https://formsubmit.co/aryan.malik.6262@gmail.com" method="POST">
+                        <input type="hidden" name="_captcha" value="false" />
                         <div class="form-group">
-                            <input type="text" id="name" name="name" placeholder="Your Full Name (Required)" required>
-                            <input type="email" id="email" name="email" placeholder="Your Email Address (Required)" required>
+                            <input type="text" id="name" name="name" placeholder="Your Name" required />
                         </div>
-                        <input type="text" id="subject" name="subject" placeholder="Subject">
-                        <textarea id="message" name="message" placeholder="Your Message"></textarea>
-                        <button type="submit" class="btn">Send Message</button>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required />
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" placeholder="Subject" />
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary">Send Message</button>
                     </form>
                 </div>
-                <div class="contact-info" data-aos="fade-left">
-                    <h2>Contact Information</h2>
-                    <div class="info-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <div class="info-text">
-                            <span>Country</span>
-                            <span>India</span>
-                        </div>
-                    </div>
-                    <div class="info-item">
-                        <i class="fas fa-phone-alt"></i>
-                        <div class="info-text">
-                            <span>Phone</span>
-                            <span>+91 9350380441</span>
-                        </div>
-                    </div>
-                    <div class="info-item">
-                        <i class="fas fa-envelope"></i>
-                        <div class="info-text">
-                            <span>Email</span>
-                            <span>aryan.malik.6262@gmail.com</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-    </main>
-
-    <footer class="footer">
-        <div class="container footer-content">
-            <div class="footer-col footer-logo">
-                <a href="#" class="logo">
-                    <svg viewBox="0 0 50 50" class="logo-icon">
-                        <path d="M25 0c-13.8 0-25 11.2-25 25s11.2 25 25 25 25-11.2 25-25-11.2-25-25-25zm0 46c-11.6 0-21-9.4-21-21s9.4-21 21-21 21 9.4 21 21-9.4 21-21 21zM15 15c-1.1 0-2 0.9-2 2v16c0 1.1 0.9 2 2 2h20c1.1 0 2-0.9 2-2v-16c0-1.1-0.9-2-2-2h-20zm0 2h20v16h-20v-16zM20 20c-1.1 0-2 0.9-2 2s0.9 2 2 2 2-0.9 2-2-0.9-2-2-2zM30 20c-1.1 0-2 0.9-2 2s0.9 2 2 2 2-0.9 2-2-0.9-2-2-2zM20 25c-1.1 0-2 0.9-2 2s0.9 2 2 2 2-0.9 2-2-0.9-2-2-2zM30 25c-1.1 0-2 0.9-2 2s0.9 2 2 2 2-0.9 2-2-0.9-2-2-2z"/>
-                </svg>
-                JTG
-            </a>
-            <div class="social-links">
-                <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
             </div>
         </div>
-        <div class="footer-col">
-            <h3>Useful Links</h3>
-            <ul>
-                <li><a href="#">Privacy Policy</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Terms & Conditions</a></li>
-                <li><a href="#">Projects</a></li>
-            </ul>
-        </div>
-        <div class="footer-col">
-            <h3>Portfolio</h3>
-            <ul>
-                <li><a href="#">Web Design</a></li>
-                <li><a href="#">Mobile Apps</a></li>
-                <li><a href="#">UI/UX Design</a></li>
-                <li><a href="#">Marketing</a></li>
-            </ul>
-        </div>
-        <div class="footer-col">
-            <h3>Company</h3>
-            <ul>
-                <li><a href="#">Career</a></li>
-                <li><a href="#">Contact Us</a></li>
-                <li><a href="#">Support</a></li>
-            </ul>
-        </div>
-    </div>
-    <div class="footer-bottom">
-        <p>&copy; 2024 JTG. All Rights Reserved.</p>
-    </div>
-</footer>
+    </section>
 
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script src="script.js"></script>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Aryan Malik. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <button id="backToTopBtn" title="Go to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
 
 </body>
+
 </html>
